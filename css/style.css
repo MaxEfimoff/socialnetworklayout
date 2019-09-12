@@ -245,7 +245,7 @@ span, li {
 }
 
 .personal-info {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .education {
@@ -341,3 +341,40 @@ span, li {
 .post-text {
   margin-top: 0.5rem;
 }
+
+/* Transitions */
+.slideup, .slidedown {
+  max-height: 0;            
+  overflow-y: hidden;
+  transition: transform 1.5s ease-in-out;
+}
+.slidedown {            
+  max-height: 160px ;                    
+} 
+
+.friends-slideup, .friends-slidedown {
+  max-height: 0;            
+  overflow-y: hidden;
+  transition: transform 1.5s ease-in-out;
+}
+.friends-slidedown {            
+  max-height: 160px ;                    
+} 
+
+.groups-slideup, .groups-slidedown {
+  max-height: 0;            
+  overflow-y: hidden;
+  transition: transform 1.5s ease-in-out;
+}
+.groups-slidedown {            
+  max-height: 160px ;                    
+} 
+
+.photos-slideup, .photos-slidedown {
+  max-height: 0;            
+  overflow-y: hidden;
+  transition: transform 1.5s ease-in-out;
+}
+.photos-slidedown {            
+  max-height: 160px ;                    
+} 
