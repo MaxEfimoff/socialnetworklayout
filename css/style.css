@@ -59,8 +59,16 @@ span, li {
   color: var(--secondary-color);;
 }
 
+i {
+  color:var(--secondary-color);
+}
+
 .padding {
   padding: 1rem;
+}
+
+.noleftpadding {
+  padding: 1rem 1rem 1rem 0;
 }
 
 .navbar {
