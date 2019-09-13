@@ -32,13 +32,87 @@
   <div class="main">
     <div class="container container-main">
       <!-- Section left -->
-      <section>
+      <section class="section-left">
         <!-- Avatar -->
-        <div class="section padding">
-          <img src="img/01.jpg" alt="">
-          <div class="edit-profile">
-            <button>Edit profile</button>
+        <div class="section">
+          <!-- <img class="avatar-background" src="img/photos/unsplash_2.jpg" alt=""> -->
+          <div class="avatar-background">
+
           </div>
+            <div class="avatar">
+              <img class="avatar" src="img/01.jpg" alt="">
+            </div>
+            <div class="edit-profile">
+              <h3>Max Efi</h3>
+              <span>Change status</span>
+            </div>  
+            <!-- Stats -->
+            <div class="stats">
+              <a href="./friends.html" class="stat-counter">
+                <div class="count">42</div>
+                <i class="fas fa-user"></i>
+              </a>
+              <a href="./subscribers.html" class="stat-counter lefthalfpadding">
+                <div class="count">93</div>
+                <i class="fas fa-user-plus"></i>
+              </a>
+              <a href="./messages.html" class="stat-counter lefthalfpadding">
+                <div class="count">2</div>
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="./photos.html" class="stat-counter lefthalfpadding">
+                <div class="count">554</div>
+                <i class="fas fa-camera"></i>
+              </a>
+              <a href="./groups.html" class="stat-counter lefthalfpadding">
+                <div class="count">41</div>
+                <i class="fas fa-users"></i>
+              </a>
+              <a href="./documents.html" class="stat-counter lefthalfpadding">
+                <div class="count">13</div>
+                <i class="fas fa-file-alt"></i>
+              </a>
+              <a href="./notes.html" class="stat-counter lefthalfpadding">
+                <div class="count">11</div>
+                <i class="fas fa-sticky-note"></i>
+              </a>
+            </div>
+            <div class="edit-profile halfpadding">
+              <button>Edit profile</button>
+            </div>
+            <div class="edit-profile">
+                <div class="personal-info">
+                    <div class="education padding">
+                      <a>Education</a>
+                      <span>UDSU</span>
+                    </div>
+                    <div class="show-more">
+                      <a><i href="#" class="fas fa-chevron-down" id="showMoreInfo"></i></a>
+                    </div>
+                    <!-- More info hidden -->
+                    <div class="container-slider"> 
+                      <div id="slider" class="slideup">
+                        <div class="education padding">
+                          <a>Contacts</a>
+                          <span>8 111 111 1111</span>
+                        </div>
+                        <div class="education padding">
+                          <a>Main info</a>
+                          <span>Russian</span>
+                        </div>
+                        <div class="education padding">
+                          <a>Education</a>
+                          <span>Universidad de Granada</span>
+                        </div>
+                        <div class="education padding">
+                          <a>Personal info</a>
+                          <span>Russia</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
         </div>
         <!-- Friends -->
         <div class="section friends">
@@ -136,88 +210,14 @@
             </div>
           </div> 
         </div>
-        </section>
+      </section>
 
         <!-- Section center -->
         <section class="section-center">
-          <!-- Info -->
-          <div class="section info">
-            <div class="name">
-              <h1>Max Efi</h1>
-              <span>Change status</span>
-            </div>
-            <div class="personal-info">
-              <div class="education padding">
-                <h4>Education</h4>
-                <span>UDSU</span>
-              </div>
-              <div class="show-more">
-                <a><i href="#" class="fas fa-chevron-down" id="showMoreInfo"></i></a>
-              </div>
-              <!-- More info hidden -->
-              <div class="container-slider"> 
-                <div id="slider" class="slideup">
-                  <div class="education padding">
-                    <h4>Contacts</h4>
-                    <span>8 111 111 1111</span>
-                  </div>
-                  <div class="education padding">
-                    <h4>Main info</h4>
-                    <span>Russian</span>
-                  </div>
-                  <div class="education padding">
-                    <h4>Education</h4>
-                    <span>Universidad de Granada</span>
-                  </div>
-                  <div class="education padding">
-                    <h4>Personal info</h4>
-                    <span>Russia</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Stats -->
-            <div class="stats">
-              <a href="./friends.html" class="stat-counter">
-                <div class="count">42</div>
-                <span class="label">Friends</span>
-              </a>
-              <a href="./subscribers.html" class="stat-counter">
-                <div class="count">93</div>
-                <span class="label">Subscribers</span>
-              </a>
-              <a href="./messages.html" class="stat-counter">
-                <div class="count">2</div>
-                <span class="label">Messages</span>
-              </a>
-              <a href="./photos.html" class="stat-counter">
-                <div class="count">554</div>
-                <span class="label">Photos</span>
-              </a>
-              <a href="./groups.html" class="stat-counter">
-                <div class="count">41</div>
-                <span class="label">Groups</span>
-              </a>
-              <a href="./documents.html" class="stat-counter">
-                <div class="count">13</div>
-                <span class="label">Documents</span>
-              </a>
-              <a href="./notes.html" class="stat-counter">
-                <div class="count">11</div>
-                <span class="label">Notes</span>
-              </a>
-            </div>
-          </div>
           <!-- Posts -->
           <div class="section posts">
-            <div class="post-new noleftpadding">
-              <form action="#" class="post-new-form">
-                <input type="text" placeholder="Friends search" />
-              </form>
-            </div>
-            <div class="post-wrapper">
-              <div >
-                <ul class="posts-list padding">
+              <div class="friends-list padding">
+                <ul  class="flex">
                   <li>
                     <a href="">Friends</a>
                   </li>
@@ -225,53 +225,70 @@
                     <a href="">Friends online</a>
                   </li>
                 </ul>
+                <form action="#" class="post-new-form">
+                  <input type="text" placeholder="Friends search" />
+                </form>
               </div>
               <div class="post">
                 <div class="post-author">
-                  <div class="groups-photo">
-                    <img class="groups-img" src="img/friends/01.jpg" alt="">
-                    <h4 class="padding">Ivan Ivanov </h4>
+                  <div class="groups-photo lefthalfpadding">
+                    <img class="groups-img" src="img/friends/06.jpg" alt="">
+                    <div class="leftpadding">
+                        <div><a>Dan Newman</a></div>
+                        <div><a>Oxford</a></div>
+                      </div>
                   </div>
-                  <span>Messages </span>
+                  <a>Messages </a>
                 </div>
               </div>
               <div class="post">
                 <div class="post-author">
-                  <div class="groups-photo">
-                    <img class="groups-img" src="img/friends/03.jpg" alt="">
-                    <h4 class="padding">Petr Petrov </h4>
+                  <div class="groups-photo lefthalfpadding">
+                    <img class="groups-img" src="img/friends/07.jpg" alt="">
+                    <div class="leftpadding">
+                        <div><a>Nick Truman</a></div>
+                        <div><a>USC</a></div>
+                      </div>
                   </div>
-                  <span>Messages </span>
+                  <a>Messages </a>
                 </div>
               </div>
               <div class="post">
                 <div class="post-author">
-                  <div class="groups-photo">
-                    <img class="groups-img" src="img/friends/04.jpg" alt="">
-                    <h4 class="padding">Sidor Sidorov </h4>
+                  <div class="groups-photo lefthalfpadding">
+                    <img class="groups-img" src="img/friends/08.jpg" alt="">
+                    <div class="leftpadding">
+                        <div><a>Michael Jhordan</a></div>
+                        <div><a>UdSu</a></div>
+                      </div>
                   </div>
-                  <span>Messages </span>
+                  <a>Messages </a>
                 </div>
               </div>
               <div class="post">
                 <div class="post-author">
-                  <div class="groups-photo">
-                    <img class="groups-img" src="img/friends/02.jpg" alt="">
-                    <h4 class="padding">John Doe</h4>
+                  <div class="groups-photo lefthalfpadding">
+                    <img class="groups-img" src="img/friends/09.jpg" alt="">
+                    <div class="leftpadding">
+                      <div><a>John Doe</a></div>
+                      <div><a>UGR</a></div>
+                    </div>
                   </div>
-                  <span>Messages </span>
+                  <a>Messages </a>
                 </div>
               </div>
               <div class="post">
                 <div class="post-author">
-                  <div class="groups-photo">
-                    <img class="groups-img" src="img/friends/05.jpg" alt="">
-                    <h4 class="padding">Michael Jhordan</h4>
+                  <div class="groups-photo lefthalfpadding">
+                    <img class="groups-img" src="img/friends/10.jpg" alt="">
+                    <div class="leftpadding">
+                      <div><a>Nick Miller</a></div>
+                      <div><a>University of Madrid</a></div>
+                    </div>
                   </div>
-                  <span>Messages </span>
+                  <a>Messages </a>
                 </div>
               </div>
-            </div>
           </div>
         </section>
       </div>
